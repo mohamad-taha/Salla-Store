@@ -3,7 +3,16 @@
   margin: 0;
   padding: 0;
   font-family: rubik;
-  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+:root {
+  --primary-color: #62d0b6;
+  --danger-color: #f55157;
+  --dark-gray-color: #333333;
+  --gray-color: #666666;
+  --light-gray-color: #a5a5a5;
 }
 /* ! header-section */
 header {
@@ -18,7 +27,7 @@ header {
 header div button {
   background-color: transparent;
   border-style: none;
-  color: #666666;
+  color: var(--gray-color);
   border-right-style: solid;
   padding: 0 20px;
   border-width: 1px;
@@ -37,7 +46,7 @@ header div .lang-switch {
 }
 header .header-links a {
   text-decoration: none;
-  color: #666666;
+  color: var(--gray-color);
   display: flex;
   font-size: 13px;
   flex-direction: row-reverse;
@@ -96,7 +105,7 @@ nav .logo-container a {
   align-items: center;
   font-size: 22px;
   text-decoration: none;
-  color: #333333;
+  color: var(--dark-gray-color);
   width: 70px;
   text-align: right;
 }
@@ -118,7 +127,7 @@ nav .nav-actions > div div {
   align-items: flex-end;
 }
 nav .nav-actions > div div button {
-  color: #333333;
+  color: var(--dark-gray-color);
   background-color: transparent;
   border: none;
   display: flex;
@@ -127,10 +136,10 @@ nav .nav-actions > div div button {
   font-size: 16px;
 }
 nav .nav-actions > div div p {
-  color: #333333;
+  color: var(--dark-gray-color);
 }
 nav .nav-actions > div div .title {
-  color: #a5a5a5;
+  color: var(--light-gray-color);
   font-size: 14px;
 }
 nav .nav-actions > div > a {
@@ -188,11 +197,11 @@ nav .nav-actions > div > a {
   border-radius: 50px;
 }
 .subscribe-container > div:first-child > div p:first-child {
-  color: #333333;
+  color: var(--dark-gray-color);
   font-size: 20px;
 }
 .subscribe-container > div:first-child > div p {
-  color: #666666;
+  color: var(--gray-color);
   font-size: 14px;
 }
 .subscribe-container div input {
@@ -202,7 +211,7 @@ nav .nav-actions > div > a {
   width: 342px;
 }
 .subscribe-container div button {
-  background-color: #62d0b6;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   font-size: 14px;
