@@ -4,9 +4,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/cart.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    
+    <!-- ! header-section -->
+    <header>
+      <div>
+        <button>Contact us</button>
+        <button>Exchange or return policy</button>
+        <button>Favorite</button>
+        <button class="lang-switch">Ar/En</button>
+      </div>
+      <div class="header-links">
+        <a href="">
+          <img src="./assets/imgs/email.svg" alt="mail" />support@salla.sa</a
+        >
+        <a href="">
+          <img src="./assets/imgs/call.svg" alt="phone" />+966556754472</a
+        >
+      </div>
+    </header>
+    <!-- ! nav-section -->
+    <nav>
+      <div class="logo-container">
+        <a href="./index.html">
+          Salla Store <img src="./assets/imgs/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <div class="nav-actions">
+        <div>
+          <div>
+            <p class="title">Shopping Cart</p>
+            <p>1,200 SR</p>
+          </div>
+          <a href="./cart.html"
+            ><img src="./assets/imgs/cart.svg" alt="cart"
+          /></a>
+        </div>
+        <div>
+          <div>
+            <p class="title">Welcome</p>
+            <button>
+              <img src="./assets/imgs/arrow-up.svg" alt="arrow-up" />Login
+            </button>
+          </div>
+          <a href="./info.html"
+            ><img src="./assets/imgs/user.svg" alt="user"
+          /></a>
+        </div>
+      </div>
+      <button><img src="./assets/imgs/list.svg" alt="list" /></button>
+    </nav>
+    <!-- ! cart-section -->
+    <div class="cart">
+      <div class="cart-cards">
+        <div class="cart-card">
+          <div class="product-details">
+            <div>
+              <img
+                src="./assets/imgs/headphones-original.svg"
+                alt="headphones"
+              />
+            </div>
+            <div>
+              <p>
+                Apple iPhone mobile phone, dual SIM, 64 GB, in addition to two
+                cameras
+              </p>
+              <span>50.000 SR</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <div><button>-</button> <span>2</span> <button>+</button></div>
+            <p>50.000 SR</p>
+            <button><img src="./assets/imgs/Cancel.svg" alt="cancle" /></button>
+          </div>
+        </div>
+        <div class="cart-card">
+          <div class="product-details">
+            <div>
+              <img
+                src="./assets/imgs/smart-watch-offer.svg"
+                alt="smart-watch"
+              />
+            </div>
+            <div>
+              <p>
+                Apple iPhone mobile phone, dual SIM, 64 GB, in addition to two
+                cameras
+              </p>
+              <span>50.000 SR</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <div><button>-</button> <span>2</span> <button>+</button></div>
+            <p>50.000 SR</p>
+            <button><img src="./assets/imgs/Cancel.svg" alt="cancle" /></button>
+          </div>
+        </div>
+        <div class="cart-card">
+          <div class="product-details">
+            <div>
+              <img src="./assets/imgs/iphone-14.svg" alt="iphone14" />
+            </div>
+            <div>
+              <p>
+                Apple iPhone mobile phone, dual SIM, 64 GB, in addition to two
+                cameras
+              </p>
+              <span>50.000 SR</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <div><button>-</button> <span>1</span> <button>+</button></div>
+            <p>50.000 SR</p>
+            <button><img src="./assets/imgs/Cancel.svg" alt="cancle" /></button>
+          </div>
+        </div>
+      </div>
+      <div class="order">
+        <h2>Order Details</h2>
+        <div class="order-price">
+          <p>Total products</p>
+          <span>145 SR</span>
+        </div>
+        <div class="discount">
+          <p>Do you have a discount code?</p>
+          <div><input placeholder="Enter Code" type="text" /><button>Add</button></div>
+        </div>
+        <div class="price-tax">
+          <div>
+            <p>Total</p>
+            <span>145 SR</span>
+          </div>
+          <p>Prices include tax *</p>
+        </div>
+        <a href="./checkout.html">Check Out</a>
+      </div>
+    </div>
+    <!-- ! subscribe-section -->
+    <div class="subscribe-container">
+      <div>
+        <div>
+          <img src="./assets/imgs/email.svg" alt="email" />
+        </div>
+        <div>
+          <p>Subscribe to the newsletter</p>
+          <p>Join now and get 10% off your next purchase!</p>
+        </div>
+      </div>
+      <div>
+        <input type="email" placeholder="Enter Your Email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    <!-- ! footer-section -->
+    <footer>
+      <p>All rights reserved to the basket platform © 2023</p>
+      <div>
+        <div>
+          <img src="./assets/imgs/mada.svg" alt="mada" />
+          <img src="./assets/imgs/paypal.svg" alt="paypal" />
+          <img src="./assets/imgs/master.svg" alt="master" />
+          <img src="./assets/imgs/visa.svg" alt="visa" />
+        </div>
+        <p>Tax Number:546987552</p>
+      </div>
+    </footer>
   </body>
 </html>

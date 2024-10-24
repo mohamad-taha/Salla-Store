@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/checkout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ! header-section -->
+    <header>
+      <div>
+        <button>Contact us</button>
+        <button>Exchange or return policy</button>
+        <button>Favorite</button>
+        <button class="lang-switch">Ar/En</button>
+      </div>
+      <div class="header-links">
+        <a href="">
+          <img src="./assets/imgs/email.svg" alt="mail" />support@salla.sa</a
+        >
+        <a href="">
+          <img src="./assets/imgs/call.svg" alt="phone" />+966556754472</a
+        >
+      </div>
+    </header>
+    <!-- ! nav-section -->
+    <nav>
+      <div class="logo-container">
+        <a href="./index.html">
+          Salla Store <img src="./assets/imgs/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <div class="nav-actions">
+        <div>
+          <div>
+            <p class="title">Shopping Cart</p>
+            <p>1,200 SR</p>
+          </div>
+          <a href="./cart.html"
+            ><img src="./assets/imgs/cart.svg" alt="cart"
+          /></a>
+        </div>
+        <div>
+          <div>
+            <p class="title">Welcome</p>
+            <button>
+              <img src="./assets/imgs/arrow-up.svg" alt="arrow-up" />Login
+            </button>
+          </div>
+          <a href="./info.html"
+            ><img src="./assets/imgs/user.svg" alt="user"
+          /></a>
+        </div>
+      </div>
+      <button><img src="./assets/imgs/list.svg" alt="list" /></button>
+    </nav>
+    <!-- ! checkout-section -->
+    <div class="checkout">
+      <h2>Check Out</h2>
+      <form action="">
+        <div>
+          <label for="first-name">First Name*</label>
+          <input
+            id="first-name"
+            type="text"
+            placeholder="First Name"
+            required
+            name="first-name"
+          />
+        </div>
+        <div>
+          <label for="last-name">Last Name*</label>
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Last Name"
+            required
+            name="last-name"
+          />
+        </div>
+        <div>
+          <label for="country">Country / Region*</label>
+          <input
+            type="text"
+            id="country"
+            placeholder="Country / Region"
+            required
+            name="country"
+          />
+        </div>
+        <div>
+          <label for="company-name">Company Name</label>
+          <input
+            type="text"
+            id="company-name"
+            placeholder="Company (optional)"
+            required
+            name="company-name"
+          />
+        </div>
+        <div>
+          <label for="street-address*">Street Address*</label>
+          <input
+            type="text"
+            id="street-address"
+            placeholder="Street Address"
+            required
+            name="street-address"
+          />
+        </div>
+        <div>
+          <label for="suite-unit">Apt, suite, unit</label>
+          <input
+            type="text"
+            id="suite-unit"
+            placeholder="Apt, suite, unit (optional)"
+            required
+            name="unit-suite"
+          />
+        </div>
+        <div>
+          <label for="city">City*</label>
+          <input
+            type="text"
+            id="city"
+            placeholder="Town / City"
+            required
+            name="city"
+          />
+        </div>
+        <div>
+          <label for="state">State*</label>
+          <select
+            style="color: var(--gray-color)"
+            name="state"
+            id="state"
+            required
+          >
+            <option value="0">State</option>
+          </select>
+        </div>
+        <div>
+          <label for="postal-code">Postal Code*</label>
+          <input
+            type="text"
+            id="postal-code"
+            placeholder="Postal Code"
+            required
+            name="postal-code"
+          />
+        </div>
+        <div>
+          <label for="phone">Phone*</label>
+          <input type="text" id="phone" placeholder="Phone" required />
+        </div>
+        <div class="confirm-delivery">
+          <button type="submit">Continue to delivery</button>
+          <div class="save-info-container">
+            <input type="checkbox" id="save-info" />
+            <label for="save-info"
+              >Save my information for a faster checkout</label
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- ! payment-method-section -->
+    <div class="payment-method-container">
+      <div class="title">
+        <h2>Payment Method</h2>
+        <p>All transactions are secure and encrypted.</p>
+      </div>
+      <form action="">
+        <div class="credit-card">
+          <div class="credit-title">
+            <input type="radio" />
+            <div>
+              <h3>Credit Card</h3>
+              <p>We accept all major credit cards.</p>
+            </div>
+          </div>
+          <div class="payments-methods-imgs">
+            <img src="./assets/imgs/Frame 440.svg" alt="google-pay" />
+            <img src="./assets/imgs/Frame 441.svg" alt="visa" />
+            <img src="./assets/imgs/Frame 442.svg" alt="paypal" />
+            <img src="./assets/imgs/Frame 443.svg" alt="paypass" />
+          </div>
+          <div class="credit-inputs">
+            <input type="text" placeholder="Card number" />
+            <input type="text" placeholder="Name od card" />
+            <input type="text" placeholder="Expiration date (MM/YY)" />
+            <div>
+              <input type="password" placeholder="Security Code" />
+              <button>
+                <img src="./assets/imgs/eye.svg" alt="show-password" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="cash-method">
+          <div class="cash-title">
+            <input type="radio" />
+            <div>
+              <h3>Cash on delivery</h3>
+              <p>Pay with cash upon delivery.</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="paypal-method">
+          <div class="paypal-title">
+            <input type="radio" />
+            <div>
+              <h3>Paypal</h3>
+            </div>
+          </div>
+        </div>
+        <button>Pay Now</button>
+      </form>
+    </div>
+    <!-- ! subscribe-section -->
+    <div class="subscribe-container">
+      <div>
+        <div>
+          <img src="./assets/imgs/email.svg" alt="email" />
+        </div>
+        <div>
+          <p>Subscribe to the newsletter</p>
+          <p>Join now and get 10% off your next purchase!</p>
+        </div>
+      </div>
+      <div>
+        <input type="email" placeholder="Enter Your Email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <!-- ! footer-section -->
+    <footer>
+      <p>All rights reserved to the basket platform © 2023</p>
+      <div>
+        <div>
+          <img src="./assets/imgs/mada.svg" alt="mada" />
+          <img src="./assets/imgs/paypal.svg" alt="paypal" />
+          <img src="./assets/imgs/master.svg" alt="master" />
+          <img src="./assets/imgs/visa.svg" alt="visa" />
+        </div>
+        <p>Tax Number:546987552</p>
+      </div>
+    </footer>
+  </body>
+</html>
