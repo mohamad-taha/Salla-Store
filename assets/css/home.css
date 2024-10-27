@@ -52,7 +52,7 @@
     width: fit-content;
   }
   .hero .hero-content p {
-    width: 300px;
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -364,9 +364,12 @@
     align-items: flex-start;
     gap: 10px;
   }
-  .featured-products-cards {
+  .featured-products .featured-products-cards {
     flex-direction: column;
     align-items: center;
+  }
+  .featured-products .featured-products-cards .featured-products-card {
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -417,11 +420,11 @@
     height: max-content;
   }
   .best-sales > img {
-    width: 300px;
+    width: 100%;
   }
   .best-sales .best-sales-content h2,
   .best-sales .best-sales-content p {
-    width: 300px;
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -673,7 +676,7 @@
     flex-direction: column;
   }
   .offers .offers-cards .offers-card .card-content .card-actions button {
-    width: 200px;
+    width: 150px;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -720,6 +723,10 @@
     justify-content: center;
     gap: 30px;
   }
+  .feature-of-products div  {
+    padding: 20px 0;
+    width: max-content;
+  }
 }
 @media (min-width: 431px) and (max-width: 892px) {
   .feature-of-products {
@@ -761,7 +768,7 @@
     gap: 30px;
   }
   .sales-banner p {
-    width: 300px;
+    width: 100%;
   }
 }
 /* ! reviews-section */
@@ -813,11 +820,8 @@
     gap: 20px;
     overflow-x: scroll;
   }
-  .reviews .reviews-cards .review-card {
-    width: 300px;
-  }
   .reviews .reviews-cards .review-card p {
-    width: 300px;
+    width: 100%;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {
@@ -852,6 +856,7 @@
   }
   .brands .brand {
     padding: 0 20px;
+    width: max-content;
   }
 }
 @media (min-width: 431px) and (max-width: 892px) {

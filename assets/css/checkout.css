@@ -77,6 +77,12 @@
         }
       }
     }
+    > button {
+      width: 100%;
+    }
+  }
+  .confirm-delivery button {
+    width: fit-content !important ;
   }
 }
 .checkout form .save-info-container {
@@ -84,6 +90,26 @@
   label {
     width: 100%;
   }
+}
+@media (min-width: 431px) and (max-width: 892px) {
+.checkout{
+  width: max-content;
+  h2{
+    width: max-content;
+  } 
+form{
+  width: max-content;
+  flex-direction: column;
+  align-items: flex-start;
+  #state,
+  #city,
+  #postal-code {
+    width: 390px;
+  }
+  #state{
+    width: 408px;
+  }
+}}
 }
 /* ! payment-methodes-section */
 .payment-method-container {
@@ -162,11 +188,12 @@
 @media (max-width: 430px) {
   .payment-method-container {
     padding: 0 20px;
-    width: 80%;
+    > .title {
+      width: 80%;
+    }
     form {
-      width: 100%;
+      width: 80%;
       .payments-methods-imgs {
-        width: 200px;
         flex-wrap: wrap;
       }
       .credit-title,
@@ -180,11 +207,11 @@
         width: 80%;
       }
       .credit-inputs {
-        width: 80%;
+        width: 100%;
         div {
           width: 100%;
           button {
-            right: 30px;
+            right: 35px;
           }
         }
         input {
@@ -192,8 +219,24 @@
         }
       }
       hr {
-        width: 90%;
+        width: 70%;
       }
+    }
+  }
+}
+@media (min-width: 431px) and (max-width: 892px) {
+  .payment-method-container form .credit-inputs {
+    flex-direction: column;
+    width: 100%;
+    div{
+      button{
+        right: 300px;
+      }
+    }
+  }
+  .payment-method-container form{
+    hr{
+      width: 100%;
     }
   }
 }
