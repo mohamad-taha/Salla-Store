@@ -20,7 +20,7 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      lable {
+      label {
         color: var(--dark-gray-color);
       }
       input,
@@ -56,7 +56,7 @@
     }
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 630px) {
   .checkout {
     width: 70%;
     padding: 0 20px;
@@ -82,7 +82,7 @@
     }
   }
   .confirm-delivery button {
-    width: fit-content !important ;
+    width: fit-content !important;
   }
 }
 .checkout form .save-info-container {
@@ -91,27 +91,27 @@
     width: 100%;
   }
 }
-@media (min-width: 431px) and (max-width: 892px) {
-.checkout{
-  width: max-content;
-  h2{
+@media (min-width: 630px) and (max-width: 1024px) {
+  .checkout {
     width: max-content;
-  } 
-form{
-  width: max-content;
-  flex-direction: column;
-  align-items: flex-start;
-  #state,
-  #city,
-  #postal-code {
-    width: 390px;
+    h2 {
+      width: max-content;
+    }
+    form {
+      width: max-content;
+      flex-direction: column;
+      align-items: flex-start;
+      #state,
+      #city,
+      #postal-code {
+        width: 390px;
+      }
+      #state {
+        width: 408px;
+      }
+    }
   }
-  #state{
-    width: 408px;
-  }
-}}
 }
-/* ! payment-methodes-section */
 .payment-method-container {
   margin-top: 50px;
   padding: 0 50px;
@@ -185,7 +185,7 @@ form{
     }
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 630px) {
   .payment-method-container {
     padding: 0 20px;
     > .title {
@@ -224,18 +224,18 @@ form{
     }
   }
 }
-@media (min-width: 431px) and (max-width: 892px) {
+@media (min-width: 630px) and (max-width: 1024px) {
   .payment-method-container form .credit-inputs {
     flex-direction: column;
     width: 100%;
-    div{
-      button{
+    div {
+      button {
         right: 300px;
       }
     }
   }
-  .payment-method-container form{
-    hr{
+  .payment-method-container form {
+    hr {
       width: 100%;
     }
   }

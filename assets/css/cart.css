@@ -145,7 +145,7 @@
     text-align: center;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 630px) {
   .cart {
     flex-direction: column;
     padding: 0 20px;
@@ -181,7 +181,7 @@
     }
   }
 }
-@media (min-width: 431px) and (max-width: 892px) {
+@media (min-width: 630px) and (max-width: 1024px) {
   .cart {
     flex-direction: column;
     gap: 20px;
